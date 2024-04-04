@@ -32,11 +32,11 @@ int main() {
         printf("sample size: %d\r\n", message);
 
         // reads ADC and prints voltages that number of times
-        for (int i = 0; i < samples; i++) {
-            uint16_t result = adc_read();
-            float volts = (result / 4096.0) * 3.3;
-            printf("adc: %.2fV\r\n", volts);
-            sleep_ms(10);
-        }
+        //for (int i = 0; i < samples; i++) {
+        //    uint16_t result = adc_read();
+        //    float volts = (result / 4096.0) * 3.3;
+         //   printf("adc: %.2fV\r\n", volts);
+        //    sleep_ms(10);
+       // }
     }
 }
