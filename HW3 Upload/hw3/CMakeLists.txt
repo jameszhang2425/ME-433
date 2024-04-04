@@ -1,6 +1,5 @@
 add_executable(hw3)
 
-target_sources(hw3 PRIVATE hw3.c)
 
 pico_enable_stdio_usb(hw3 1) 
 pico_enable_stdio_uart(hw3 0)
