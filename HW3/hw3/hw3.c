@@ -32,7 +32,7 @@ int main() {
 
         for (int ii = 0; ii < sample_size; ii++) {
             uint16_t result = adc_read();
-            float voltage = result;
+            float voltage = (result/4095.0)*3.3;
             printf("adc: %.2fV\r\n", voltage);
             sleep_ms(100);
        }
