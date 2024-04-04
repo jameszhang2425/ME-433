@@ -1,5 +1,6 @@
 add_executable(hw3
-            hw3)
+        hw3
+        )
 
 pico_enable_stdio_usb(hw3 1) 
 pico_enable_stdio_uart(hw3 0)
