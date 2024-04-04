@@ -1,6 +1,6 @@
 {
     "cmake.environment": {
-    "PICO_SDK_PATH":"/Users/jz/desktop/pico/pico-sdk"
+    "PICO_SDK_PATH":"/Users/jz/Desktop/Pico/pico-sdk"
     },
     "C_Cpp.errorSquiggles": "disabled",
   }
