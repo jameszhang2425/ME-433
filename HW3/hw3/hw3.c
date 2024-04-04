@@ -27,9 +27,10 @@ int main() {
 
         gpio_put(16, 0);
 
-        char message[100];
-        scanf("%d", message);
-        printf("sample size: %d\r\n", message);
+        int sample_size;
+        printf("Please enter sample size (integer): \r\n");
+        scanf("%d", &sample_size);
+        printf("Sample size: %d\r\n", sample_size);
 
         // reads ADC and prints voltages that number of times
         //for (int i = 0; i < samples; i++) {
