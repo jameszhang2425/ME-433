@@ -20,11 +20,9 @@ int main() {
 
     while (1) {
         gpio_put(16, 1);
-
         while (gpio_get(18) != 1) {
             sleep_ms(100);
         }
-
         gpio_put(16, 0);
 
         int sample_size;
@@ -32,12 +30,10 @@ int main() {
         scanf("%d", &sample_size);
         printf("Sample size: %d\r\n", sample_size);
 
-        // reads ADC and prints voltages that number of times
-        //for (int i = 0; i < samples; i++) {
-        //    uint16_t result = adc_read();
-        //    float volts = (result / 4096.0) * 3.3;
-         //   printf("adc: %.2fV\r\n", volts);
-        //    sleep_ms(10);
-       // }
+        for (int ii = 0; ii < sample_size; ii++) {
+            uint16_t result = adc_read();
+            printf("adc: %.2fV\r\n", result);
+            sleep_ms(100);
+       }
     }
 }
