@@ -19,14 +19,6 @@
    GPIO 19 (pin 25) MOSI/spi0_tx -> SDA/SDI on bme280 board
    3.3v (pin 36) -> VCC on bme280 board
    GND (pin 38)  -> GND on bme280 board
-
-   Note: SPI devices can have a number of different naming schemes for pins. See
-   the Wikipedia page at https://en.wikipedia.org/wiki/Serial_Peripheral_Interface
-   for variations.
-
-   This code uses a bunch of register definitions, and some compensation code derived
-   from the Bosch datasheet which can be found here.
-   https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme280-ds002.pdf
 */
 
 #define READ_BIT 0x80
@@ -80,37 +72,6 @@ static void read_registers(uint8_t reg, uint8_t *buf, uint16_t len) {
     sleep_ms(10);
 }
 
-/* This function reads the manufacturing assigned compensation parameters from the device */
-void read_compensation_parameters() {
-    uint8_t buffer[26];
-
-    read_registers(0x88, buffer, 24);
-
-    dig_T1 = buffer[0] | (buffer[1] << 8);
-    dig_T2 = buffer[2] | (buffer[3] << 8);
-    dig_T3 = buffer[4] | (buffer[5] << 8);
-
-    dig_P1 = buffer[6] | (buffer[7] << 8);
-    dig_P2 = buffer[8] | (buffer[9] << 8);
-    dig_P3 = buffer[10] | (buffer[11] << 8);
-    dig_P4 = buffer[12] | (buffer[13] << 8);
-    dig_P5 = buffer[14] | (buffer[15] << 8);
-    dig_P6 = buffer[16] | (buffer[17] << 8);
-    dig_P7 = buffer[18] | (buffer[19] << 8);
-    dig_P8 = buffer[20] | (buffer[21] << 8);
-    dig_P9 = buffer[22] | (buffer[23] << 8);
-
-    dig_H1 = buffer[25];
-
-    read_registers(0xE1, buffer, 8);
-
-    dig_H2 = buffer[0] | (buffer[1] << 8);
-    dig_H3 = (int8_t) buffer[2];
-    dig_H4 = buffer[3] << 4 | (buffer[4] & 0xf);
-    dig_H5 = (buffer[5] >> 4) | (buffer[6] << 4);
-    dig_H6 = (int8_t) buffer[7];
-}
-
 #endif
 
 int main() {
@@ -133,35 +94,13 @@ int main() {
     gpio_init(PICO_DEFAULT_SPI_CSN_PIN);
     gpio_set_dir(PICO_DEFAULT_SPI_CSN_PIN, GPIO_OUT);
     gpio_put(PICO_DEFAULT_SPI_CSN_PIN, 1);
-    // Make the CS pin available to picotool
-    bi_decl(bi_1pin_with_name(PICO_DEFAULT_SPI_CSN_PIN, "SPI CS"));
 
     // See if SPI is working - interrograte the device for its I2C ID number, should be 0x60
     uint8_t id;
     read_registers(0xD0, &id, 1);
     printf("Chip ID is 0x%x\n", id);
 
-    read_compensation_parameters();
-
     write_register(0xF2, 0x1); // Humidity oversampling register - going for x1
     write_register(0xF4, 0x27);// Set rest of oversampling modes and run mode to normal
-
-    int32_t humidity, pressure, temperature;
-
-    while (1) {
-        bme280_read_raw(&humidity, &pressure, &temperature);
-
-        // These are the raw numbers from the chip, so we need to run through the
-        // compensations to get human understandable numbers
-        pressure = compensate_pressure(pressure);
-        temperature = compensate_temp(temperature);
-        humidity = compensate_humidity(humidity);
-
-        printf("Humidity = %.2f%%\n", humidity / 1024.0);
-        printf("Pressure = %dPa\n", pressure);
-        printf("Temp. = %.2fC\n", temperature / 100.0);
-
-        sleep_ms(1000);
-    }
 #endif
 }
