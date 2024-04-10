@@ -12,10 +12,21 @@ set(NICK_PICO_EXAMPLES_PATH ${PROJECT_SOURCE_DIR})
 # Initialize the SDK
 pico_sdk_init()
 
-add_subdirectory(hw4)
-
 add_compile_options(-Wall
         -Wno-format          # int != int32_t as far as the compiler is concerned because gcc has int32_t as long int
         -Wno-unused-function # we have some for the docs that aren't called
         -Wno-maybe-uninitialized
         )
+
+add_executable(hw4_spi)
+
+target_sources(hw4_spi PRIVATE hw4_spi.c)
+
+pico_enable_stdio_usb(hw4_spi 1)
+pico_enable_stdio_uart(hw4_spi 0)
+
+# Pull in our pico_stdlib which pulls in commonly used features
+target_link_libraries(hw4_spi pico_stdlib hardware_spi)
+
+# create map/bin/hex file etc.
+pico_add_extra_outputs(hw4_spi)
