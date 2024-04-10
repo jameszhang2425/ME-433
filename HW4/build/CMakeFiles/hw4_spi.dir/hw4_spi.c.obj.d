@@ -69,4 +69,5 @@ CMakeFiles/hw4_spi.dir/hw4_spi.c.obj: \
  /Users/jz/Desktop/Pico/pico-sdk/src/common/pico_binary_info/include/pico/binary_info/code.h \
  /Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_spi/include/hardware/spi.h \
  /Users/jz/Desktop/Pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/spi.h \
- /Users/jz/Desktop/Pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/spi.h
+ /Users/jz/Desktop/Pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/spi.h \
+ /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/math.h
