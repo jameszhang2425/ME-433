@@ -27,12 +27,12 @@ static inline void cs_deselect() {
 static void write_register(unsigned int initialize, unsigned int pin) {
     uint8_t buf[2];
 
-    uint8_t adcCounts4MostSignificant = (initialize >> 6);
-    uint8_t adcCounts6LeastSignificant = (initialize & 0b0000111111);
+    uint8_t four_most_significant = (initialize >> 6);
+    uint8_t six_least_significant = (initialize & 0b0000111111);
     buf[0] = pin << 7; 
     buf[0] |= 0b01110000;
-    buf[0] |= adcCounts4MostSignificant;
-    buf[1] = (adcCounts6LeastSignificant << 2);
+    buf[0] |= four_most_significant;
+    buf[1] = (six_least_significant << 2);
 
     cs_select();
     spi_write_blocking(spi_default, buf, 2);
@@ -63,29 +63,29 @@ int main() {
     gpio_set_dir(PICO_DEFAULT_SPI_CSN_PIN, GPIO_OUT);
     gpio_put(PICO_DEFAULT_SPI_CSN_PIN, 1);
 
-    unsigned int sinWave[100];
-    unsigned int triangleWave[100];
+    unsigned int sin_wave[100];
+    unsigned int triangle_wave[100];
     for (int i = 0; i < 100; i++) {
-        float sineValue = sin(2 * 3.14 * i / 50);
-        sinWave[i] = (unsigned int) ((sineValue + 1) / 2 * 1023); 
+        float sin_val = sin(2 * 3.14 * i / 50);
+        sin_wave[i] = (unsigned int) ((sin_val + 1) / 2 * 1023); 
     }
 
-    const unsigned int maxVal = 1023;
-    const int halfCycle = 50; 
+    const unsigned int max_val = 1023;
+    const int half_cycle = 50; 
 
     for (int i = 0; i < 100; i++) {
-        if (i < halfCycle) {
-            triangleWave[i] = (unsigned int)(((double)i / (halfCycle - 1)) * maxVal);
+        if (i < half_cycle) {
+            triangle_wave[i] = (unsigned int)(((double)i / (half_cycle - 1)) * max_val);
         } else {
-            triangleWave[i] = (unsigned int)(((double)(100 - i - 1) / (halfCycle - 1)) * maxVal);
+            triangle_wave[i] = (unsigned int)(((double)(100 - i - 1) / (half_cycle - 1)) * max_val);
         }
     }
 
     while(1){
         for (unsigned int i = 0; i < 100; i++) {
-            write_register(sinWave[i], 0);
+            write_register(sin_wave[i], 0);
             sleep_ms(5);
-            write_register(triangleWave[i], 1);
+            write_register(triangle_wave[i], 1);
             sleep_ms(5);
         }
     }

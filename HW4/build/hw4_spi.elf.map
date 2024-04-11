@@ -1492,9 +1492,9 @@ Discarded input sections
                 0x00000000       0x3c CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
  .time_critical.spi_read16_blocking
                 0x00000000       0x3e CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
- .text          0x00000000        0x0 /var/folders/5l/x6sm374s72vcxsmrpd28x1p00000gn/T//ccv39GQk.o
- .data          0x00000000        0x0 /var/folders/5l/x6sm374s72vcxsmrpd28x1p00000gn/T//ccv39GQk.o
- .bss           0x00000000        0x0 /var/folders/5l/x6sm374s72vcxsmrpd28x1p00000gn/T//ccv39GQk.o
+ .text          0x00000000        0x0 /var/folders/5l/x6sm374s72vcxsmrpd28x1p00000gn/T//ccYqrcir.o
+ .data          0x00000000        0x0 /var/folders/5l/x6sm374s72vcxsmrpd28x1p00000gn/T//ccYqrcir.o
+ .bss           0x00000000        0x0 /var/folders/5l/x6sm374s72vcxsmrpd28x1p00000gn/T//ccYqrcir.o
  .data          0x00000000        0x0 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x00000000        0x0 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x00000000        0x0 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-calloc.o)
@@ -1813,7 +1813,7 @@ LOAD /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-no
 .boot2          0x10000000      0x100
                 0x10000000                        __boot2_start__ = .
  *(.boot2)
- .boot2         0x10000000      0x100 /var/folders/5l/x6sm374s72vcxsmrpd28x1p00000gn/T//ccv39GQk.o
+ .boot2         0x10000000      0x100 /var/folders/5l/x6sm374s72vcxsmrpd28x1p00000gn/T//ccYqrcir.o
                 0x10000100                        __boot2_end__ = .
                 0x00000001                        ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
@@ -3421,7 +3421,7 @@ LOAD CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/tusb.
 LOAD CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 LOAD CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 LOAD CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
-LOAD /var/folders/5l/x6sm374s72vcxsmrpd28x1p00000gn/T//ccv39GQk.o
+LOAD /var/folders/5l/x6sm374s72vcxsmrpd28x1p00000gn/T//ccYqrcir.o
 LOAD /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -3540,7 +3540,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x000007ce       0x2c CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
  .ARM.attributes
-                0x000007fa       0x22 /var/folders/5l/x6sm374s72vcxsmrpd28x1p00000gn/T//ccv39GQk.o
+                0x000007fa       0x22 /var/folders/5l/x6sm374s72vcxsmrpd28x1p00000gn/T//ccYqrcir.o
  .ARM.attributes
                 0x0000081c       0x1e /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes
@@ -3944,102 +3944,102 @@ LOAD linker stubs
  .debug_rnglists
                 0x00001716       0x62 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
 
-.debug_line     0x00000000    0x19a26
- .debug_line    0x00000000      0x627 CMakeFiles/hw4_spi.dir/hw4_spi.c.obj
- .debug_line    0x00000627      0xc2b CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_line    0x00001252      0x2ab CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_line    0x000014fd      0x4af CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_line    0x000019ac      0x499 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_line    0x00001e45     0x108b CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_line    0x00002ed0      0x250 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_line    0x00003120     0x1100 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_line    0x00004220      0x2e2 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
- .debug_line    0x00004502     0x19f2 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/common/pico_time/time.c.obj
- .debug_line    0x00005ef4      0xc2f CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_line    0x00006b23      0x848 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_line    0x0000736b      0xa3b CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_line    0x00007da6      0x52d CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_line    0x000082d3      0x476 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_line    0x00008749      0x2c2 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_line    0x00008a0b      0xb30 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_line    0x0000953b     0x12de CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_line    0x0000a819      0x11a CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_line    0x0000a933      0x28d CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_line    0x0000abc0      0x2a9 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
- .debug_line    0x0000ae69      0x3fa CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_line    0x0000b263      0x3dc CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_line    0x0000b63f     0x2223 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
- .debug_line    0x0000d862      0x66c CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_line    0x0000dece       0x61 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
- .debug_line    0x0000df2f      0x3b2 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_line    0x0000e2e1      0x3d1 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_line    0x0000e6b2      0x198 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_line    0x0000e84a       0x94 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_line    0x0000e8de       0xa5 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_line    0x0000e983      0x1e6 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .debug_line    0x0000eb69      0xf04 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_line    0x0000fa6d      0x4c5 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
- .debug_line    0x0000ff32      0xdd4 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- .debug_line    0x00010d06      0x34f CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- .debug_line    0x00011055      0x3de CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
- .debug_line    0x00011433      0x8e4 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
- .debug_line    0x00011d17      0xf36 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
- .debug_line    0x00012c4d      0xae6 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- .debug_line    0x00013733     0x1f1d CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
- .debug_line    0x00015650      0x563 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
- .debug_line    0x00015bb3      0xda7 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
- .debug_line    0x0001695a      0xc10 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
- .debug_line    0x0001756a     0x17f7 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
- .debug_line    0x00018d61      0xcc5 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+.debug_line     0x00000000    0x19a1c
+ .debug_line    0x00000000      0x61d CMakeFiles/hw4_spi.dir/hw4_spi.c.obj
+ .debug_line    0x0000061d      0xc2b CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_line    0x00001248      0x2ab CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_line    0x000014f3      0x4af CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_line    0x000019a2      0x499 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_line    0x00001e3b     0x108b CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_line    0x00002ec6      0x250 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_line    0x00003116     0x1100 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_line    0x00004216      0x2e2 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
+ .debug_line    0x000044f8     0x19f2 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_line    0x00005eea      0xc2f CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_line    0x00006b19      0x848 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_line    0x00007361      0xa3b CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_line    0x00007d9c      0x52d CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_line    0x000082c9      0x476 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_line    0x0000873f      0x2c2 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_line    0x00008a01      0xb30 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_line    0x00009531     0x12de CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_line    0x0000a80f      0x11a CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_line    0x0000a929      0x28d CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_line    0x0000abb6      0x2a9 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_line    0x0000ae5f      0x3fa CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_line    0x0000b259      0x3dc CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_line    0x0000b635     0x2223 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+ .debug_line    0x0000d858      0x66c CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_line    0x0000dec4       0x61 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+ .debug_line    0x0000df25      0x3b2 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_line    0x0000e2d7      0x3d1 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_line    0x0000e6a8      0x198 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_line    0x0000e840       0x94 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_line    0x0000e8d4       0xa5 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_line    0x0000e979      0x1e6 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_line    0x0000eb5f      0xf04 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_line    0x0000fa63      0x4c5 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+ .debug_line    0x0000ff28      0xdd4 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ .debug_line    0x00010cfc      0x34f CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ .debug_line    0x0001104b      0x3de CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+ .debug_line    0x00011429      0x8e4 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+ .debug_line    0x00011d0d      0xf36 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+ .debug_line    0x00012c43      0xae6 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ .debug_line    0x00013729     0x1f1d CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+ .debug_line    0x00015646      0x563 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+ .debug_line    0x00015ba9      0xda7 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+ .debug_line    0x00016950      0xc10 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+ .debug_line    0x00017560     0x17f7 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+ .debug_line    0x00018d57      0xcc5 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
 
-.debug_str      0x00000000     0x7472
- .debug_str     0x00000000     0x7472 CMakeFiles/hw4_spi.dir/hw4_spi.c.obj
-                                0x627 (size before relaxing)
- .debug_str     0x00007472      0xa02 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_str     0x00007472      0x229 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_str     0x00007472      0x36d CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_str     0x00007472      0x354 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_str     0x00007472      0x822 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_str     0x00007472      0x20a CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_str     0x00007472      0x5fc CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_str     0x00007472      0x2ca CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
- .debug_str     0x00007472      0xc7f CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/common/pico_time/time.c.obj
- .debug_str     0x00007472      0x734 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_str     0x00007472      0x3fa CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_str     0x00007472      0x6d1 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_str     0x00007472      0x2e5 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_str     0x00007472      0x32b CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_str     0x00007472      0x228 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_str     0x00007472      0x7eb CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_str     0x00007472      0x489 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_str     0x00007472       0x84 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_str     0x00007472      0x280 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_str     0x00007472       0x7e CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
- .debug_str     0x00007472       0x82 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_str     0x00007472      0x2c9 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_str     0x00007472      0x515 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
- .debug_str     0x00007472       0x88 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_str     0x00007472       0x8d CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
- .debug_str     0x00007472       0x80 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_str     0x00007472      0x2c5 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_str     0x00007472       0x86 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_str     0x00007472       0x84 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_str     0x00007472       0x81 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_str     0x00007472      0x3eb CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .debug_str     0x00007472      0x9d5 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_str     0x00007472      0x76f CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
- .debug_str     0x00007472      0xb28 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- .debug_str     0x00007472      0xe5f CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- .debug_str     0x00007472      0x27c CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
- .debug_str     0x00007472      0x61c CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
- .debug_str     0x00007472      0xece CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
- .debug_str     0x00007472      0x821 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- .debug_str     0x00007472     0x1747 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
- .debug_str     0x00007472      0x52b CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
- .debug_str     0x00007472     0x1520 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
- .debug_str     0x00007472      0xad2 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
- .debug_str     0x00007472      0x75b CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
- .debug_str     0x00007472      0x5a6 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
+.debug_str      0x00000000     0x746b
+ .debug_str     0x00000000     0x746b CMakeFiles/hw4_spi.dir/hw4_spi.c.obj
+                                0x620 (size before relaxing)
+ .debug_str     0x0000746b      0xa02 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_str     0x0000746b      0x229 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_str     0x0000746b      0x36d CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_str     0x0000746b      0x354 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_str     0x0000746b      0x822 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_str     0x0000746b      0x20a CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_str     0x0000746b      0x5fc CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_str     0x0000746b      0x2ca CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
+ .debug_str     0x0000746b      0xc7f CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_str     0x0000746b      0x734 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_str     0x0000746b      0x3fa CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_str     0x0000746b      0x6d1 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_str     0x0000746b      0x2e5 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_str     0x0000746b      0x32b CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_str     0x0000746b      0x228 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_str     0x0000746b      0x7eb CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_str     0x0000746b      0x489 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_str     0x0000746b       0x84 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_str     0x0000746b      0x280 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_str     0x0000746b       0x7e CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_str     0x0000746b       0x82 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_str     0x0000746b      0x2c9 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_str     0x0000746b      0x515 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+ .debug_str     0x0000746b       0x88 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_str     0x0000746b       0x8d CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+ .debug_str     0x0000746b       0x80 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_str     0x0000746b      0x2c5 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_str     0x0000746b       0x86 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_str     0x0000746b       0x84 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_str     0x0000746b       0x81 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_str     0x0000746b      0x3eb CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_str     0x0000746b      0x9d5 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_str     0x0000746b      0x76f CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+ .debug_str     0x0000746b      0xb28 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ .debug_str     0x0000746b      0xe5f CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ .debug_str     0x0000746b      0x27c CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+ .debug_str     0x0000746b      0x61c CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+ .debug_str     0x0000746b      0xece CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+ .debug_str     0x0000746b      0x821 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ .debug_str     0x0000746b     0x1747 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+ .debug_str     0x0000746b      0x52b CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+ .debug_str     0x0000746b     0x1520 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+ .debug_str     0x0000746b      0xad2 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+ .debug_str     0x0000746b      0x75b CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+ .debug_str     0x0000746b      0x5a6 CMakeFiles/hw4_spi.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj
 
 .debug_frame    0x00000000     0x3418
  .debug_frame   0x00000000       0x4c CMakeFiles/hw4_spi.dir/hw4_spi.c.obj
