@@ -13,16 +13,6 @@
 
 #define READ_BIT 0x80
 
-int32_t t_fine;
-
-uint16_t dig_T1;
-int16_t dig_T2, dig_T3;
-uint16_t dig_P1;
-int16_t dig_P2, dig_P3, dig_P4, dig_P5, dig_P6, dig_P7, dig_P8, dig_P9;
-uint8_t dig_H1, dig_H3;
-int8_t dig_H6;
-int16_t dig_H2, dig_H4, dig_H5;
-
 
 #ifdef PICO_DEFAULT_SPI_CSN_PIN
 static inline void cs_select() {
@@ -93,7 +83,6 @@ int main() {
             triangleWave[i] = (unsigned int)(((double)(100 - i - 1) / (halfCycle - 1)) * maxVal);
         }
     }
-    sleep_ms(10);
 
     while(1){
         // write_register(0x70, 0x00);
