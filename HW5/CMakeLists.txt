@@ -26,7 +26,7 @@ pico_enable_stdio_usb(hw5_i2c 1)
 pico_enable_stdio_uart(hw5_i2c 0)
 
 # Pull in our pico_stdlib which pulls in commonly used features
-target_link_libraries(hw5_i2c pico_stdlib hardware_spi)
+target_link_libraries(hw5_i2c pico_stdlib hardware_i2c)
 
 # create map/bin/hex file etc.
 pico_add_extra_outputs(hw5_i2c)
