@@ -18,15 +18,15 @@ add_compile_options(-Wall
         -Wno-maybe-uninitialized
         )
 
-add_executable(hw4_spi)
+add_executable(hw5_i2c)
 
-target_sources(hw4_spi PRIVATE hw4_spi.c)
+target_sources(hw5_i2c PRIVATE hw5_i2c.c)
 
-pico_enable_stdio_usb(hw4_spi 1)
-pico_enable_stdio_uart(hw4_spi 0)
+pico_enable_stdio_usb(hw5_i2c 1)
+pico_enable_stdio_uart(hw5_i2c 0)
 
 # Pull in our pico_stdlib which pulls in commonly used features
-target_link_libraries(hw4_spi pico_stdlib hardware_spi)
+target_link_libraries(hw5_i2c pico_stdlib hardware_spi)
 
 # create map/bin/hex file etc.
-pico_add_extra_outputs(hw4_spi)
+pico_add_extra_outputs(hw5_i2c)
