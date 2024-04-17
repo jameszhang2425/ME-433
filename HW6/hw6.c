@@ -1,6 +1,7 @@
 // based on adafruit and sparkfun libraries
 #include <stdio.h>
 #include <string.h> // for memset
+#include "hardware/adc.h"
 #include "hw6.h"
 #include "font.h"
 #include "hardware/i2c.h"
@@ -12,10 +13,6 @@ unsigned char ssd1306_buffer[513]; // 128x32/8. Every bit is a pixel except firs
 void ssd1306_setup() {
     // first byte in ssd1306_buffer is a command
     ssd1306_buffer[0] = 0x40;
-    // give a little delay for the ssd1306 to power up
-    //_CP0_SET_COUNT(0);
-    //while (_CP0_GET_COUNT() < 48000000 / 2 / 50) {
-    //}
     sleep_ms(20);
     ssd1306_command(SSD1306_DISPLAYOFF);
     ssd1306_command(SSD1306_SETDISPLAYCLOCKDIV);
@@ -46,11 +43,6 @@ void ssd1306_setup() {
 
 // send a command instruction (not pixel data)
 void ssd1306_command(unsigned char c) {
-    //i2c_master_start();
-    //i2c_master_send(ssd1306_write);
-    //i2c_master_send(0x00); // bit 7 is 0 for Co bit (data bytes only), bit 6 is 0 for DC (data is a command))
-    //i2c_master_send(c);
-    //i2c_master_stop();
 
     uint8_t buf[2];
     buf[0] = 0x00;
@@ -69,16 +61,7 @@ void ssd1306_update() {
 
     unsigned short count = 512; // WIDTH * ((HEIGHT + 7) / 8)
     unsigned char * ptr = ssd1306_buffer; // first address of the pixel buffer
-    /*
-    i2c_master_start();
-    i2c_master_send(ssd1306_write);
-    i2c_master_send(0x40); // send pixel data
-    // send every pixel
-    while (count--) {
-        i2c_master_send(*ptr++);
-    }
-    i2c_master_stop();
-    */
+
 
     i2c_write_blocking(i2c_default, SSD1306_ADDRESS, ptr, 513, false);
 }
@@ -136,30 +119,30 @@ int main(){
     ssd1306_setup();
     gpio_init(LED_PIN);
     gpio_set_dir(LED_PIN, GPIO_OUT);
+    adc_init(); 
+    adc_gpio_init(26); 
+    adc_select_input(0); 
 
     char message[50];
     char fps_message[50];
-    int ic = 0;
     while(1){
         gpio_put(LED_PIN, 1);
+        uint16_t adc_val = adc_read();
+        float adc_volts = (float)adc_val/1212.0;
+
+        sprintf(message, "ADC(VOLTS)= %f", adc_volts);
 
         unsigned int start = to_us_since_boot(get_absolute_time());
-        sprintf(message, "hello %d", ic);
-        draw_message(5, 10, message);
-        ic++;
-        unsigned int end = to_us_since_boot(get_absolute_time());
-
+        draw_message(5, 5, message);
+        unsigned int stop = to_us_since_boot(get_absolute_time());
         unsigned int dt = stop - start;
-        sprintf(fps_message, "FPS= %f", 1000000.0/t);
-        draw_message(15, 10, fps_message);
 
-        sleep_ms(100);
+        sprintf(fps_message, "FPS= %f", 1000000.0/dt);
+        draw_message(5, 15, fps_message);
+        sleep_ms(250);
+        
         gpio_put(LED_PIN, 0);
-        ssd1306_clear();
-        sleep_ms(100);
-        if (ic==10){
-            ic = 0;
-        }
+        sleep_ms(250);
     }
 }
 

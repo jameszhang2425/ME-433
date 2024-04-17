@@ -26,7 +26,7 @@ pico_enable_stdio_usb(hw6 1)
 pico_enable_stdio_uart(hw6 0)
 
 # Pull in our pico_stdlib which pulls in commonly used features
-target_link_libraries(hw6 pico_stdlib hardware_i2c)
+target_link_libraries(hw6 pico_stdlib hardware_i2c hardware_adc)
 
 # create map/bin/hex file etc.
 pico_add_extra_outputs(hw6)
