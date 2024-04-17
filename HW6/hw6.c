@@ -1,7 +1,8 @@
 // based on adafruit and sparkfun libraries
-
+#include <stdio.h>
 #include <string.h> // for memset
 #include "hw6.h"
+#include "font.h"
 #include "hardware/i2c.h"
 #include "pico/stdlib.h"
 
@@ -102,14 +103,14 @@ void ssd1306_clear() {
 }
 
 void draw_char(int x, int y, char letter){
-    for (int ii = 0; i < 5; i++){
+    for (int ii = 0; ii < 5; ii++){
         char c = ASCII[letter-32][ii];
         for (int jj = 0; jj < 8; jj++){
             char bit = (c>>jj)&0b1;
-            if (bit == 0){
-                ssd1306_drawPixel(x+ii, y+jj, 0)
+            if (bit == 0b1){
+                ssd1306_drawPixel(x+ii, y+jj, 1);
             } else{
-                ssd1306_drawPixel(x+ii, y+jj, 1)
+                ssd1306_drawPixel(x+ii, y+jj, 0);
             }
         }
     }
@@ -121,7 +122,7 @@ void draw_message(int x, int y, char*m){
         draw_char(x+kk*5, y, m[kk]);
         kk++;
     }
-    ssd1306_update;
+    ssd1306_update();
 }
 
 #define LED_PIN 25 
@@ -137,17 +138,19 @@ int main(){
     gpio_set_dir(LED_PIN, GPIO_OUT);
 
     char message[50];
+    int ic = 0;
     while(1){
         gpio_put(LED_PIN, 1);
-        ssd1306_drawPixel(120, 15, 1)
+        sprintf(message, "hello %d", ic);
+        draw_message(64, 12, message);
+        ic++;
         sleep_ms(100);
-
-
-        gpio_put(LED_PIN,0);
-        ssd1306_drawPixel(120, 15, 0)
+        gpio_put(LED_PIN, 0);
+        ssd1306_clear();
+        sleep_ms(100);
+        if (ic==10){
+            ic = 0;
+        }
     }
-    int i = 0;
-    sprint(message, "hello %d", i);
-    draw_char(64, 12, message)
 }
 
