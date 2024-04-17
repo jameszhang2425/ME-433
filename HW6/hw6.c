@@ -1,7 +1,7 @@
 // based on adafruit and sparkfun libraries
 
 #include <string.h> // for memset
-#include "ssd1306.h"
+#include "hw6.h"
 #include "hardware/i2c.h"
 #include "pico/stdlib.h"
 
@@ -101,11 +101,6 @@ void ssd1306_clear() {
     ssd1306_buffer[0] = 0x40; // first byte is part of command
 }
 
-char message[50];
-int i = 0;
-sprint(message, "hello %d", i);
-draw_char(64, 12, message)
-
 void draw_char(int x, int y, char letter){
     for (int ii = 0; i < 5; i++){
         char c = ASCII[letter-32][ii];
@@ -120,11 +115,19 @@ void draw_char(int x, int y, char letter){
     }
 }
 
-void draw_message(int x, int y, char * m){
-    kk = 0;
+void draw_message(int x, int y, char*m){
+    int kk = 0;
     while(m[kk]){
         draw_char(x+kk*5, y, m[kk]);
         kk++;
     }
     ssd1306_update;
 }
+
+int main(){
+    char message[50];
+    int i = 0;
+    sprint(message, "hello %d", i);
+    draw_char(64, 12, message)
+}
+
