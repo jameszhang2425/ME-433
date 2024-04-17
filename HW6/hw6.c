@@ -124,8 +124,28 @@ void draw_message(int x, int y, char*m){
     ssd1306_update;
 }
 
+#define LED_PIN 25 
+
 int main(){
+    stdio_init_all();
+    i2c_init(i2c_default, 100 * 1000);
+    gpio_set_function(PICO_DEFAULT_I2C_SDA_PIN, GPIO_FUNC_I2C);
+    gpio_set_function(PICO_DEFAULT_I2C_SCL_PIN, GPIO_FUNC_I2C);
+
+    ssd1306_setup();
+    gpio_init(LED_PIN);
+    gpio_set_dir(LED_PIN, GPIO_OUT);
+
     char message[50];
+    while(1){
+        gpio_put(LED_PIN, 1);
+        ssd1306_drawPixel(120, 15, 1)
+        sleep_ms(100);
+
+
+        gpio_put(LED_PIN,0);
+        ssd1306_drawPixel(120, 15, 0)
+    }
     int i = 0;
     sprint(message, "hello %d", i);
     draw_char(64, 12, message)
