@@ -18,15 +18,15 @@ add_compile_options(-Wall
         -Wno-maybe-uninitialized
         )
 
-add_executable(hw5_i2c)
+add_executable(hw6)
 
-target_sources(hw5_i2c PRIVATE hw5_i2c.c)
+target_sources(hw6 PRIVATE hw6.c)
 
-pico_enable_stdio_usb(hw5_i2c 1)
-pico_enable_stdio_uart(hw5_i2c 0)
+pico_enable_stdio_usb(hw6 1)
+pico_enable_stdio_uart(hw6 0)
 
 # Pull in our pico_stdlib which pulls in commonly used features
-target_link_libraries(hw5_i2c pico_stdlib hardware_i2c)
+target_link_libraries(hw6 pico_stdlib hardware_i2c)
 
 # create map/bin/hex file etc.
-pico_add_extra_outputs(hw5_i2c)
+pico_add_extra_outputs(hw6)
