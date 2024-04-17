@@ -138,12 +138,21 @@ int main(){
     gpio_set_dir(LED_PIN, GPIO_OUT);
 
     char message[50];
+    char fps_message[50];
     int ic = 0;
     while(1){
         gpio_put(LED_PIN, 1);
+
+        unsigned int start = to_us_since_boot(get_absolute_time());
         sprintf(message, "hello %d", ic);
-        draw_message(64, 12, message);
+        draw_message(5, 10, message);
         ic++;
+        unsigned int end = to_us_since_boot(get_absolute_time());
+
+        unsigned int dt = stop - start;
+        sprintf(fps_message, "FPS= %f", 1000000.0/t);
+        draw_message(15, 10, fps_message);
+
         sleep_ms(100);
         gpio_put(LED_PIN, 0);
         ssd1306_clear();
