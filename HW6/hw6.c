@@ -112,7 +112,7 @@ void draw_message(int x, int y, char*m){
 
 int main(){
     stdio_init_all();
-    i2c_init(i2c_default, 100 * 1000);
+    i2c_init(i2c_default, 400 * 1000);
     gpio_set_function(PICO_DEFAULT_I2C_SDA_PIN, GPIO_FUNC_I2C);
     gpio_set_function(PICO_DEFAULT_I2C_SCL_PIN, GPIO_FUNC_I2C);
 
