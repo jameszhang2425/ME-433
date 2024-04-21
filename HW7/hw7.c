@@ -1,8 +1,7 @@
 // based on adafruit and sparkfun libraries
 #include <stdio.h>
 #include <string.h> // for memset
-#include "hardware/adc.h"
-#include "hw6.h"
+#include "hw7.h"
 #include "font.h"
 #include "hardware/i2c.h"
 #include "pico/stdlib.h"
@@ -18,12 +17,12 @@
 #define UART_TX_PIN 0
 #define UART_RX_PIN 1
 
-static int chars_rxed = 0;
-
 #define LED_PIN 25 
 
 unsigned char SSD1306_ADDRESS = 0b0111100; // 7bit i2c address
 unsigned char ssd1306_buffer[513]; // 128x32/8. Every bit is a pixel except first byte
+
+static int chars_rxed = 0;
 
 void ssd1306_setup() {
     // first byte in ssd1306_buffer is a command
@@ -115,13 +114,13 @@ void draw_char(int x, int y, char letter){
 }
 
 static volatile int x = 0;
-static volatile int y = 0
+static volatile int y = 0;
 
 void on_uart_rx() {
     while (uart_is_readable(UART_ID)) {
         uint8_t ch = uart_getc(UART_ID);
 
-        if (ch == '\n'){
+        if (ch == '\r'){
             x = 0;
             y += 10;
         } else {
@@ -157,23 +156,17 @@ int main(){
     gpio_init(LED_PIN);
     gpio_set_dir(LED_PIN, GPIO_OUT);
 
-    adc_init(); 
-    adc_gpio_init(26); 
-    adc_select_input(0); 
-
-    char message[50];
-    char fps_message[50];
     while(1){
         gpio_put(LED_PIN, 1);
         
         draw_char(x, y, 128);
         ssd1306_update();
         draw_char(x, y, ' ');
-        ssd1306_update();
-
         sleep_ms(250);
+        ssd1306_update();
         gpio_put(LED_PIN, 0);
         sleep_ms(250);
+
     }
 }
 
