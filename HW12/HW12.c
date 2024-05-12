@@ -7,6 +7,7 @@
 #include "hardware/irq.h"
 
 #define PWM_pin 7
+#define LED_PIN 25 
 
 int main(){
     gpio_set_function(PWM_pin, GPIO_FUNC_PWM); // Set the LED Pin to be PWM
@@ -16,11 +17,18 @@ int main(){
     uint16_t wrap = 62500; // when to rollover, must be less than 65535
     pwm_set_wrap(slice_num, wrap);
     pwm_set_enabled(slice_num, true); // turn on the PWM
+
+    gpio_init(LED_PIN);
+    gpio_set_dir(LED_PIN, GPIO_OUT);
+
     while(1) {
-        pwm_set_gpio_level(PWM_pin, wrap / 40); // set the duty cycle to 50%
+        gpio_put(LED_PIN, 1);
+        pwm_set_gpio_level(PWM_pin, wrap / 40); 
         sleep_ms(2000);
+        gpio_put(LED_PIN, 0);
         pwm_set_gpio_level(PWM_pin, wrap / 8);
         sleep_ms(2000);
+        gpio_put(LED_PIN, 1);
         pwm_set_gpio_level(PWM_pin, wrap / 40);
     }
     
