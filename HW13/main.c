@@ -163,10 +163,10 @@ int main(void)
     convert_sensor_data(processed_sensor_data, accel, gyro, &temp);
 
     if (accel[0] < -0.6) {
-      deltaX = 3;
+      deltaX = 5;
     }
     if (accel[0] < -0.3 && accel[0] > -0.6) {
-      deltaX = 2;
+      deltaX = 3;
     }
     if (accel[0] < -0.1 && accel[0] > -0.3) {
       deltaX = 1;
@@ -178,17 +178,17 @@ int main(void)
       deltaX = -1;
     }
     if (accel[0] < 0.6 && accel[0] > 0.3) {
-      deltaX = -2;
+      deltaX = -3;
     }
     if (accel[0] > 0.6) {
-      deltaX = -3;
+      deltaX = -5;
     }
 
     if (accel[1] < -0.6) {
-      deltaY = 3;
+      deltaY = 5;
     }
     if (accel[1] < -0.3 && accel[1] > -0.6) {
-      deltaY = 2;
+      deltaY = 3;
     }
     if (accel[1] < -0.1 && accel[1] > -0.3) {
       deltaY = 1;
@@ -200,10 +200,10 @@ int main(void)
       deltaY = -1;
     }
     if (accel[1] < 0.6 && accel[1] > 0.3) {
-      deltaY = -2;
+      deltaY = -3;
     }
     if (accel[1] > 0.6) {
-      deltaY = -3;
+      deltaY = -5;
     }
 
     tud_task();

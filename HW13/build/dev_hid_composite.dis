@@ -943,7 +943,7 @@ Disassembly of section .text:
 1000082c:	2800      	cmp	r0, #0
 1000082e:	d002      	beq.n	10000836 <main+0x106>
 10000830:	4b66      	ldr	r3, [pc, #408]	@ (100009cc <main+0x29c>)
-10000832:	22fe      	movs	r2, #254	@ 0xfe
+10000832:	22fd      	movs	r2, #253	@ 0xfd
 10000834:	701a      	strb	r2, [r3, #0]
 10000836:	4a63      	ldr	r2, [pc, #396]	@ (100009c4 <main+0x294>)
 10000838:	4b67      	ldr	r3, [pc, #412]	@ (100009d8 <main+0x2a8>)
@@ -953,7 +953,7 @@ Disassembly of section .text:
 10000842:	2800      	cmp	r0, #0
 10000844:	d002      	beq.n	1000084c <main+0x11c>
 10000846:	4b61      	ldr	r3, [pc, #388]	@ (100009cc <main+0x29c>)
-10000848:	22fd      	movs	r2, #253	@ 0xfd
+10000848:	22fb      	movs	r2, #251	@ 0xfb
 1000084a:	701a      	strb	r2, [r3, #0]
 1000084c:	9806      	ldr	r0, [sp, #24]
 1000084e:	f003 ff55 	bl	100046fc <__wrap___aeabi_f2d>
@@ -965,7 +965,7 @@ Disassembly of section .text:
 1000085e:	2800      	cmp	r0, #0
 10000860:	d002      	beq.n	10000868 <main+0x138>
 10000862:	4b5f      	ldr	r3, [pc, #380]	@ (100009e0 <main+0x2b0>)
-10000864:	2203      	movs	r2, #3
+10000864:	2205      	movs	r2, #5
 10000866:	701a      	strb	r2, [r3, #0]
 10000868:	4a56      	ldr	r2, [pc, #344]	@ (100009c4 <main+0x294>)
 1000086a:	4b57      	ldr	r3, [pc, #348]	@ (100009c8 <main+0x298>)
@@ -982,7 +982,7 @@ Disassembly of section .text:
 10000884:	2800      	cmp	r0, #0
 10000886:	d002      	beq.n	1000088e <main+0x15e>
 10000888:	4b55      	ldr	r3, [pc, #340]	@ (100009e0 <main+0x2b0>)
-1000088a:	2202      	movs	r2, #2
+1000088a:	2203      	movs	r2, #3
 1000088c:	701a      	strb	r2, [r3, #0]
 1000088e:	4a4b      	ldr	r2, [pc, #300]	@ (100009bc <main+0x28c>)
 10000890:	4b4b      	ldr	r3, [pc, #300]	@ (100009c0 <main+0x290>)
@@ -1050,7 +1050,7 @@ Disassembly of section .text:
 1000091c:	2800      	cmp	r0, #0
 1000091e:	d002      	beq.n	10000926 <main+0x1f6>
 10000920:	4b2f      	ldr	r3, [pc, #188]	@ (100009e0 <main+0x2b0>)
-10000922:	22fe      	movs	r2, #254	@ 0xfe
+10000922:	22fd      	movs	r2, #253	@ 0xfd
 10000924:	701a      	strb	r2, [r3, #0]
 10000926:	4a27      	ldr	r2, [pc, #156]	@ (100009c4 <main+0x294>)
 10000928:	4b2b      	ldr	r3, [pc, #172]	@ (100009d8 <main+0x2a8>)
@@ -1060,7 +1060,7 @@ Disassembly of section .text:
 10000932:	2800      	cmp	r0, #0
 10000934:	d002      	beq.n	1000093c <main+0x20c>
 10000936:	4b2a      	ldr	r3, [pc, #168]	@ (100009e0 <main+0x2b0>)
-10000938:	22fd      	movs	r2, #253	@ 0xfd
+10000938:	22fb      	movs	r2, #251	@ 0xfb
 1000093a:	701a      	strb	r2, [r3, #0]
 1000093c:	2001      	movs	r0, #1
 1000093e:	2100      	movs	r1, #0
@@ -1088,7 +1088,7 @@ Disassembly of section .text:
 1000097a:	2800      	cmp	r0, #0
 1000097c:	d002      	beq.n	10000984 <main+0x254>
 1000097e:	4b13      	ldr	r3, [pc, #76]	@ (100009cc <main+0x29c>)
-10000980:	2203      	movs	r2, #3
+10000980:	2205      	movs	r2, #5
 10000982:	701a      	strb	r2, [r3, #0]
 10000984:	4a0f      	ldr	r2, [pc, #60]	@ (100009c4 <main+0x294>)
 10000986:	4b10      	ldr	r3, [pc, #64]	@ (100009c8 <main+0x298>)
@@ -1107,7 +1107,7 @@ Disassembly of section .text:
 100009a4:	d100      	bne.n	100009a8 <main+0x278>
 100009a6:	e6fa      	b.n	1000079e <main+0x6e>
 100009a8:	4b08      	ldr	r3, [pc, #32]	@ (100009cc <main+0x29c>)
-100009aa:	2202      	movs	r2, #2
+100009aa:	2203      	movs	r2, #3
 100009ac:	701a      	strb	r2, [r3, #0]
 100009ae:	e6f6      	b.n	1000079e <main+0x6e>
 100009b0:	20000c38 	.word	0x20000c38
