@@ -1591,29 +1591,77 @@ Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dev_hid_composite.dir/build.make CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
-Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj: Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-.PHONY : Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj
+Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj: Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+.PHONY : Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj
 
 # target to build an object file
-Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dev_hid_composite.dir/build.make CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-.PHONY : Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dev_hid_composite.dir/build.make CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+.PHONY : Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
 
-Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
-.PHONY : Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i
+Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i: Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
+.PHONY : Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i
 
 # target to preprocess a source file
-Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dev_hid_composite.dir/build.make CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
-.PHONY : Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dev_hid_composite.dir/build.make CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
+.PHONY : Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
 
-Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
-.PHONY : Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s
+Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s: Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+.PHONY : Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s
 
 # target to generate assembly for a file
-Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dev_hid_composite.dir/build.make CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
-.PHONY : Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dev_hid_composite.dir/build.make CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+.PHONY : Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+
+Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj: Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+.PHONY : Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj
+
+# target to build an object file
+Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dev_hid_composite.dir/build.make CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+.PHONY : Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+
+Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i: Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+.PHONY : Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i
+
+# target to preprocess a source file
+Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dev_hid_composite.dir/build.make CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+.PHONY : Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+
+Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s: Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+.PHONY : Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s
+
+# target to generate assembly for a file
+Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dev_hid_composite.dir/build.make CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+.PHONY : Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+
+Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj: Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+.PHONY : Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj
+
+# target to build an object file
+Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dev_hid_composite.dir/build.make CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+.PHONY : Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+
+Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i: Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+.PHONY : Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i
+
+# target to preprocess a source file
+Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dev_hid_composite.dir/build.make CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+.PHONY : Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+
+Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s: Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
+.PHONY : Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s
+
+# target to generate assembly for a file
+Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dev_hid_composite.dir/build.make CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
+.PHONY : Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
 
 Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 .PHONY : Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj
@@ -1899,9 +1947,15 @@ help:
 	@echo "... Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj"
 	@echo "... Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i"
 	@echo "... Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s"
-	@echo "... Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj"
-	@echo "... Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i"
-	@echo "... Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s"
+	@echo "... Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj"
+	@echo "... Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i"
+	@echo "... Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s"
+	@echo "... Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj"
+	@echo "... Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i"
+	@echo "... Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s"
+	@echo "... Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj"
+	@echo "... Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i"
+	@echo "... Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s"
 	@echo "... Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj"
 	@echo "... Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i"
 	@echo "... Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s"

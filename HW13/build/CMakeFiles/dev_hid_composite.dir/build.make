@@ -702,24 +702,52 @@ CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/p
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c -o CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
-CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj: CMakeFiles/dev_hid_composite.dir/flags.make
-CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj: /Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c
-CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj: CMakeFiles/dev_hid_composite.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj -MF CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj.d -o CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj -c /Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c
+CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj: CMakeFiles/dev_hid_composite.dir/flags.make
+CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj: /Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c
+CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj: CMakeFiles/dev_hid_composite.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj -MF CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj.d -o CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj -c /Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c
 
-CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c > CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c > CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
 
-CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c -o CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c -o CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+
+CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj: CMakeFiles/dev_hid_composite.dir/flags.make
+CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj: /Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c
+CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj: CMakeFiles/dev_hid_composite.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj -MF CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj.d -o CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj -c /Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c
+
+CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c > CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+
+CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c -o CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+
+CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj: CMakeFiles/dev_hid_composite.dir/flags.make
+CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj: /Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c
+CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj: CMakeFiles/dev_hid_composite.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj -MF CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj.d -o CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj -c /Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c
+
+CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c > CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+
+CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s"
+	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c -o CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
 
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj: CMakeFiles/dev_hid_composite.dir/flags.make
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj: /Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj: CMakeFiles/dev_hid_composite.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj -MF CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj.d -o CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj -c /Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c
 
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i: cmake_force
@@ -733,7 +761,7 @@ CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/p
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj: CMakeFiles/dev_hid_composite.dir/flags.make
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj: /Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj: CMakeFiles/dev_hid_composite.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj -MF CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj.d -o CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj -c /Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c
 
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i: cmake_force
@@ -747,7 +775,7 @@ CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/h
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: CMakeFiles/dev_hid_composite.dir/flags.make
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: CMakeFiles/dev_hid_composite.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj -MF CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj.d -o CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj -c /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
 
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i: cmake_force
@@ -761,7 +789,7 @@ CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj: CMakeFiles/dev_hid_composite.dir/flags.make
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj: /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj: CMakeFiles/dev_hid_composite.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj -MF CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj.d -o CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj -c /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
 
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i: cmake_force
@@ -775,7 +803,7 @@ CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj: CMakeFiles/dev_hid_composite.dir/flags.make
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj: /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj: CMakeFiles/dev_hid_composite.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj -MF CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj.d -o CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj -c /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c
 
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i: cmake_force
@@ -789,7 +817,7 @@ CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj: CMakeFiles/dev_hid_composite.dir/flags.make
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj: /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj: CMakeFiles/dev_hid_composite.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj -MF CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj.d -o CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj -c /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c
 
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i: cmake_force
@@ -803,7 +831,7 @@ CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj: CMakeFiles/dev_hid_composite.dir/flags.make
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj: /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj: CMakeFiles/dev_hid_composite.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj -MF CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj.d -o CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj -c /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c
 
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i: cmake_force
@@ -817,7 +845,7 @@ CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj: CMakeFiles/dev_hid_composite.dir/flags.make
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj: /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj: CMakeFiles/dev_hid_composite.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj -MF CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj.d -o CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj -c /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c
 
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i: cmake_force
@@ -831,7 +859,7 @@ CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj: CMakeFiles/dev_hid_composite.dir/flags.make
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj: /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj: CMakeFiles/dev_hid_composite.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj -MF CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj.d -o CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj -c /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c
 
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i: cmake_force
@@ -845,7 +873,7 @@ CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj: CMakeFiles/dev_hid_composite.dir/flags.make
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj: /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj: CMakeFiles/dev_hid_composite.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj -MF CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj.d -o CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj -c /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c
 
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i: cmake_force
@@ -859,7 +887,7 @@ CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj: CMakeFiles/dev_hid_composite.dir/flags.make
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj: /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj: CMakeFiles/dev_hid_composite.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj -MF CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj.d -o CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj -c /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c
 
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i: cmake_force
@@ -873,7 +901,7 @@ CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj: CMakeFiles/dev_hid_composite.dir/flags.make
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj: /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj: CMakeFiles/dev_hid_composite.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj -MF CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj.d -o CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj -c /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c
 
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i: cmake_force
@@ -887,7 +915,7 @@ CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj: CMakeFiles/dev_hid_composite.dir/flags.make
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj: /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj: CMakeFiles/dev_hid_composite.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj -MF CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj.d -o CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj -c /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c
 
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i: cmake_force
@@ -901,7 +929,7 @@ CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj: CMakeFiles/dev_hid_composite.dir/flags.make
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj: /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj: CMakeFiles/dev_hid_composite.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj -MF CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj.d -o CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj -c /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c
 
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i: cmake_force
@@ -915,7 +943,7 @@ CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj: CMakeFiles/dev_hid_composite.dir/flags.make
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj: /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj: CMakeFiles/dev_hid_composite.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj -MF CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj.d -o CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj -c /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c
 
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i: cmake_force
@@ -929,7 +957,7 @@ CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj: CMakeFiles/dev_hid_composite.dir/flags.make
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj: /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj: CMakeFiles/dev_hid_composite.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj -MF CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj.d -o CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj -c /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
 
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i: cmake_force
@@ -943,7 +971,7 @@ CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj: CMakeFiles/dev_hid_composite.dir/flags.make
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj: /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj: CMakeFiles/dev_hid_composite.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj -MF CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj.d -o CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj -c /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c
 
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i: cmake_force
@@ -957,7 +985,7 @@ CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj: CMakeFiles/dev_hid_composite.dir/flags.make
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj: /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj: CMakeFiles/dev_hid_composite.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj -MF CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj.d -o CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj -c /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c
 
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i: cmake_force
@@ -971,7 +999,7 @@ CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/tusb.c.obj: CMakeFiles/dev_hid_composite.dir/flags.make
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/tusb.c.obj: /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/tusb.c
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/tusb.c.obj: CMakeFiles/dev_hid_composite.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/tusb.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/tusb.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/tusb.c.obj -MF CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/tusb.c.obj.d -o CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/tusb.c.obj -c /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/tusb.c
 
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/tusb.c.i: cmake_force
@@ -985,7 +1013,7 @@ CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj: CMakeFiles/dev_hid_composite.dir/flags.make
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj: /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj: CMakeFiles/dev_hid_composite.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj -MF CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj.d -o CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj -c /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c
 
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i: cmake_force
@@ -999,7 +1027,7 @@ CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj: CMakeFiles/dev_hid_composite.dir/flags.make
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj: /Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj: CMakeFiles/dev_hid_composite.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj -MF CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj.d -o CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj -c /Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
 
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i: cmake_force
@@ -1013,7 +1041,7 @@ CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/p
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj: CMakeFiles/dev_hid_composite.dir/flags.make
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj: /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj: CMakeFiles/dev_hid_composite.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj -MF CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj.d -o CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj -c /Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c
 
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i: cmake_force
@@ -1027,7 +1055,7 @@ CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/hw/b
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj: CMakeFiles/dev_hid_composite.dir/flags.make
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj: /Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj: CMakeFiles/dev_hid_composite.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj -MF CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj.d -o CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj -c /Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c
 
 CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i: cmake_force
@@ -1086,7 +1114,9 @@ dev_hid_composite_OBJECTS = \
 "CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj" \
 "CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj" \
 "CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj" \
-"CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj" \
+"CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj" \
+"CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj" \
+"CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj" \
 "CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj" \
 "CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj" \
 "CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj" \
@@ -1160,7 +1190,9 @@ dev_hid_composite.elf: CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pi
 dev_hid_composite.elf: CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 dev_hid_composite.elf: CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 dev_hid_composite.elf: CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-dev_hid_composite.elf: CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+dev_hid_composite.elf: CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+dev_hid_composite.elf: CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+dev_hid_composite.elf: CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
 dev_hid_composite.elf: CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
 dev_hid_composite.elf: CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 dev_hid_composite.elf: CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
@@ -1187,7 +1219,7 @@ dev_hid_composite.elf: CMakeFiles/dev_hid_composite.dir/Users/jz/Desktop/Pico/pi
 dev_hid_composite.elf: CMakeFiles/dev_hid_composite.dir/build.make
 dev_hid_composite.elf: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 dev_hid_composite.elf: CMakeFiles/dev_hid_composite.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Linking CXX executable dev_hid_composite.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/jz/Desktop/GitHub/ME-433/HW13/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Linking CXX executable dev_hid_composite.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dev_hid_composite.dir/link.txt --verbose=$(VERBOSE)
 	/opt/homebrew/bin/arm-none-eabi-objcopy -Oihex /Users/jz/Desktop/GitHub/ME-433/HW13/build/dev_hid_composite.elf dev_hid_composite.hex
 	/opt/homebrew/bin/arm-none-eabi-objcopy -Obinary /Users/jz/Desktop/GitHub/ME-433/HW13/build/dev_hid_composite.elf dev_hid_composite.bin
