@@ -1,17 +1,42 @@
+/* 
+ * The MIT License (MIT)
+ *
+ * Copyright (c) 2019 Ha Thach (tinyusb.org)
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ *
+ */
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 
 #include "bsp/board.h"
 #include "tusb.h"
-#include "pico/stdlib.h"
 #include "pico/binary_info.h"
 #include "hardware/i2c.h"
+#include "pico/stdlib.h"
+
 
 #include "usb_descriptors.h"
 
-#define LED_PIN 25
-#define MPU6050_I2C_ADDR _u(0b1101000)
+#define ADDR _u(0b1101000)
 
 // hardware registers
 #define REG_IODIR _u(0x00)
@@ -41,82 +66,15 @@
 #define GYRO_ZOUT_L  0x48
 #define WHO_AM_I     0x75
 
-volatile int8_t deltaX = 0;
-volatile int8_t deltaY = 0;
+//--------------------------------------------------------------------+
+// MACRO CONSTANT TYPEDEF PROTYPES
+//--------------------------------------------------------------------+
 
-void init_mpu6050(void)
-{
-  uint8_t buf[2];
-
-  // Write 0x00 to the PWR_MGMT_1 register to wake up the MPU6050
-  buf[0] = PWR_MGMT_1;
-  buf[1] = 0x00;
-  i2c_write_blocking(i2c_default, MPU6050_I2C_ADDR, buf, 2, false);
-
-  // Write 0x00 to the ACCEL_CONFIG register to set to ±2g
-  buf[0] = ACCEL_CONFIG;
-  buf[1] = 0x00;
-  i2c_write_blocking(i2c_default, MPU6050_I2C_ADDR, buf, 2, false);
-
-  // Write 0b00011000 to the GYRO_CONFIG register to set sensitivity
-  buf[0] = GYRO_CONFIG;
-  buf[1] = 0b00011000;
-  i2c_write_blocking(i2c_default, MPU6050_I2C_ADDR, buf, 2, false);
-}
-
-uint8_t read_who_am_i(void)
-{
-  uint8_t reg = WHO_AM_I;
-  uint8_t value = 0;
-
-  // Write the register address
-  i2c_write_blocking(i2c_default, MPU6050_I2C_ADDR, &reg, 1, true);
-  // Read the register value
-  i2c_read_blocking(i2c_default, MPU6050_I2C_ADDR, &value, 1, false);
-
-  return value;
-}
-
-void read_sensor_data(uint8_t *data)
-{
-  uint8_t reg = ACCEL_XOUT_H;
-
-  // Write the starting register address
-  // The ACK is handled by the i2c_write_blocking function
-  i2c_write_blocking(i2c_default, MPU6050_I2C_ADDR, &reg, 1, true);
-
-  // Read 14 bytes of data sequentially
-  // The ACK for each byte and the NACK after the last byte are handled by the i2c_read_blocking function
-  i2c_read_blocking(i2c_default, MPU6050_I2C_ADDR, data, 14, false);
-}
-
-void process_sensor_data(uint8_t *raw, int16_t *processed)
-{
-  for (int i = 0; i < 7; i++)
-  {
-    processed[i] = (int16_t)((raw[2 * i] << 8) | raw[2 * i + 1]);
-  }
-}
-
-void convert_sensor_data(int16_t *processed, float *accel, float *gyro, float *temp)
-{
-  // Accelerometer data
-  for (int i = 0; i < 3; i++)
-  {
-    accel[i] = processed[i] * 0.000061f; // Multiply by the acceleration sensitivity scale factor
-  }
-
-  // Temperature data
-  *temp = (processed[3] / 340.0f) + 36.53f; // Apply the temperature formula
-
-  // Gyroscope data
-  for (int i = 4; i < 7; i++)
-  {
-    gyro[i - 4] = processed[i] * 0.007630f; // Multiply by the gyroscope sensitivity scale factor
-  }
-}
-
-
+/* Blink pattern
+ * - 250 ms  : device not mounted
+ * - 1000 ms : device mounted
+ * - 2500 ms : device is suspended
+ */
 enum  {
   BLINK_NOT_MOUNTED = 250,
   BLINK_MOUNTED = 1000,
@@ -128,102 +86,119 @@ static uint32_t blink_interval_ms = BLINK_NOT_MOUNTED;
 void led_blinking_task(void);
 void hid_task(void);
 
+
+// FROM OTHER FILE *****************************************************
+
+void init() {
+    // use the "handheld device dynamic" optimal setting (see datasheet)
+    uint8_t buf[2];
+    uint8_t acc[2];
+    uint8_t gyr[2];
+
+    // send register number followed by its corresponding value
+    buf[0] = PWR_MGMT_1;
+    buf[1] = 0x00;
+    
+    acc[0] = ACCEL_CONFIG;
+    acc[1] = 0b00000;
+
+    gyr[0] = GYRO_CONFIG;
+    gyr[1] = 0b11000;
+    
+    
+    i2c_write_blocking(i2c_default, ADDR, buf, 2, false);
+    i2c_write_blocking(i2c_default, ADDR, acc, 2, false);
+    i2c_write_blocking(i2c_default, ADDR, gyr, 2, false);
+
+}
+
+void set(char v) {
+    // use the "handheld device dynamic" optimal setting (see datasheet)
+    uint8_t buf[2];
+    // send register number followed by its corresponding value
+    buf[0] = REG_OLAT;
+    buf[1] = v<<7;
+    i2c_write_blocking(i2c_default, ADDR, buf, 2, false);
+
+}
+
+int read() {
+
+    uint8_t buf[1];
+    uint8_t reg = REG_GPIO;
+    i2c_write_blocking(i2c_default, ADDR, &reg, 1, true);  // true to keep master control of bus
+    i2c_read_blocking(i2c_default, ADDR, buf, 1, false);  // false - finished with bus
+
+    if ((buf[0] & 0b1) == 0b1){
+        return 1;
+    }
+    else{
+        return 0;
+    }
+}
+
+void read_data() {
+
+    uint8_t buf[14];
+    uint8_t reg = ACCEL_XOUT_H;
+    i2c_write_blocking(i2c_default, ADDR, &reg, 1, true);  // true to keep master control of bus
+    // for (int i = 0; i <= 12; i++){
+    //     i2c_read_blocking(i2c_default, ADDR, buf[i], 1, true);  // false - finished with bus
+    // }
+    i2c_read_blocking(i2c_default, ADDR, buf, 14, false);  // false - finished with bus
+
+    int16_t vals[7];
+
+    for (int x = 0; x<=6; x++){
+        vals[x] = buf[x*2]<<8 | buf[x*2+1];
+    }
+    
+    for (int a=0;a<=6;a++){
+        if (a<=2){
+            printf("Accel: %f\n",vals[a]*0.000061);
+        }
+        else if (a==3){
+            printf("temp: %f\n",vals[a]/340 + 36.53);
+        }
+        else{
+            printf("gyro: %f\n",vals[a]*0.007630);
+        }
+    }
+    printf("\n\n");
+
+}
+
+void who_am_i() {
+
+    uint8_t buf[1];
+    uint8_t reg = WHO_AM_I;
+    i2c_write_blocking(i2c_default, ADDR, &reg, 1, true);  // true to keep master control of bus
+    i2c_read_blocking(i2c_default, ADDR, buf, 1, false);  // false - finished with bus
+
+}
+
 /*------------- MAIN -------------*/
 int main(void)
 {
   board_init();
   tusb_init();
+
   stdio_init_all();
 
-  // initialize heartbeat LED
-  gpio_init(LED_PIN);
-  gpio_set_dir(LED_PIN, GPIO_OUT); // config as output
-
-  // I2C is "open drain", pull ups to keep signal high when no data is being sent
   i2c_init(i2c_default, 100 * 1000);
   gpio_set_function(PICO_DEFAULT_I2C_SDA_PIN, GPIO_FUNC_I2C);
   gpio_set_function(PICO_DEFAULT_I2C_SCL_PIN, GPIO_FUNC_I2C);
 
-  // check if i2c is working
-  uint8_t i2c_response = read_who_am_i();
-  if (i2c_response != 0x68)
-  {
-    while (1)
-    {
-      gpio_put(LED_PIN, 1);
-      sleep_ms(500);
-      gpio_put(LED_PIN, 0);
-      sleep_ms(500);
-      printf("%d\r\n", i2c_response);
-    }
-  }
-  init_mpu6050();
+  who_am_i();
 
-  uint8_t raw_sensor_data[14];
-  int16_t processed_sensor_data[7];
-  float accel[3], gyro[3], temp;
+  init();
 
   while (1)
   {
-    read_sensor_data(raw_sensor_data);
-    process_sensor_data(raw_sensor_data, processed_sensor_data);
-    convert_sensor_data(processed_sensor_data, accel, gyro, &temp);
-
-    if (accel[0] < -0.6) {
-      deltaX = 3;
-    }
-    if (accel[0] < -0.3 && accel[0] > -0.6) {
-      deltaX = 2;
-    }
-    if (accel[0] < -0.1 && accel[0] > -0.3) {
-      deltaX = 1;
-    }
-    if (accel[0] < 0.1 && accel[0] > -0.1) {
-      deltaX = 0;
-    }
-    if (accel[0] < 0.3 && accel[0] > 0.1) {
-      deltaX = -1;
-    }
-    if (accel[0] < 0.6 && accel[0] > 0.3) {
-      deltaX = -2;
-    }
-    if (accel[0] > 0.6) {
-      deltaX = -3;
-    }
-
-    if (accel[1] < -0.6) {
-      deltaY = 3;
-    }
-    if (accel[1] < -0.3 && accel[1] > -0.6) {
-      deltaY = 2;
-    }
-    if (accel[1] < -0.1 && accel[1] > -0.3) {
-      deltaY = 1;
-    }
-    if (accel[1] < 0.1 && accel[1] > -0.1) {
-      deltaY = 0;
-    }
-    if (accel[1] < 0.3 && accel[1] > 0.1) {
-      deltaY = -1;
-    }
-    if (accel[1] < 0.6 && accel[1] > 0.3) {
-      deltaY = -2;
-    }
-    if (accel[1] > 0.6) {
-      deltaY = -3;
-    }
-
     tud_task(); // tinyusb device task
     led_blinking_task();
 
     hid_task();
-
-
-    // Print the converted data
-    printf("Accel: X=%.2f g, Y=%.2f g, Z=%.2f g\n", accel[0], accel[1], accel[2]);
-    printf("Gyro: X=%.2f dps, Y=%.2f dps, Z=%.2f dps\n", gyro[0], gyro[1], gyro[2]);
-    printf("Temp: %.2f C\n", temp);
-    printf("\n");
   }
 }
 
@@ -292,10 +267,55 @@ static void send_hid_report(uint8_t report_id, uint32_t btn)
 
     case REPORT_ID_MOUSE:
     {
-      int8_t const delta = 5;
+    //int8_t const delta = 5;
+    uint8_t buf[14];
+    uint8_t reg = ACCEL_XOUT_H;
+    i2c_write_blocking(i2c_default, ADDR, &reg, 1, true);  // true to keep master control of bus
+    i2c_read_blocking(i2c_default, ADDR, buf, 14, false);  // false - finished with bus
+    int16_t vals[7];
+    for (int x = 0; x<=6; x++){
+        vals[x] = buf[x*2]<<8 | buf[x*2+1];
+    }
+
+    uint8_t x_conv = 0;
+    uint8_t y_conv = 0;
+
+// DETERMINE X VALUE
+    if (vals[0]>= -0.3 && vals[0]<= 0.3){
+      x_conv = 0;
+    }
+    else if (vals[0]<= -0.8){
+      x_conv = 5;
+    }
+    else if (vals[0]>= 0.8){
+      x_conv = -5;
+    }
+    else if (vals[0]>-0.8 && vals[0]<-0.3){
+      x_conv = 2;
+    }
+    else if (vals[0]<0.8 && vals[0]>0.3){
+      x_conv = -2;
+    }
+
+// DETERMINE Y VALUE
+    if (vals[1]>= -0.3 && vals[1]<= 0.3){
+      y_conv = 0;
+    }
+    else if (vals[1]<= -0.8){
+      y_conv = 5;
+    }
+    else if (vals[1]>= 0.8){
+      y_conv = -5;
+    }
+    else if (vals[1]>-0.8 && vals[1]<-0.3){
+      y_conv = 2;
+    }
+    else if (vals[1]<0.8 && vals[1]>0.3){
+      y_conv = -2;
+    }
 
       // no button, right + down, no scroll, no pan
-      tud_hid_mouse_report(REPORT_ID_MOUSE, 0x00, delta, delta, 0, 0);
+      tud_hid_mouse_report(REPORT_ID_MOUSE, 0x00, x_conv, y_conv, 0, 0);
     }
     break;
 
